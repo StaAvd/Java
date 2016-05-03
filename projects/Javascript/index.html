@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<title>Min första sida</title>
+
+    	 <link rel="stylesheet" type="text/css" href="style.css"> 
+
+	</head>
+	   <body>
+			 <button id="myButton">Change text</button>
+
+ 			<p id="text">Hello World</p>
+
+ 			<script>
+
+     		document.getElementById("myButton").onclick = function() {
+           		document.getElementById("text").innerHTML = "Hello everybody";
+     		} 
+
+     		</script>
+
+     		
+
+
+
+
+     		  	<p id="noShow"></p>
+
+     		<button id="showElement">Visa element</button>
+
+     		<script>
+
+     			document.getElementById("showElement").onclick = function() {
+           		   document.getElementById("noShow").innerHTML = "<h1>Hej</h1>";	
+           	}
+
+     		</script> 
+
+     	
+
+
+
+
+
+
+
+    		<p id="noShow"></p>
+
+     		<button id="showElement">Visa element</button>
+
+     		<script>
+
+     			document.getElementById("showElement").onclick = function() {
+           		   document.getElementById("noShow").innerHTML = "<form action='demo_form.asp'>  Username: <input type='text name='usrname'><br><input type='submit' value='Submit'></form>";	
+           	}
+
+     		</script> 
+
+
+
+
+
+
+     		<button id="styleText">Style text</button>
+
+ 			<p id="moreText">Hello World</p>
+
+ 			<script>
+
+     		document.getElementById("styleText").onclick = function() {
+           		document.getElementById("moreText").style.fontSize = "50px";
+           		document.getElementById("moreText").style.color = "red";
+     		} 
+
+     		</script> 
+
+
+
+
+
+
+
+
+     	 	<button id="styleText">Style text</button>
+
+ 			<p id="moreText">Hello World</p>
+
+ 			<script>
+
+     		document.getElementById("styleText").onclick = function() {
+           		document.getElementById("moreText").style.display = "none";
+     		} 
+
+     		</script> 
+
+     	
+
+
+
+           <img id="myImage" onclick="displayForm()" src="img/menu.png" width="50" height="50">
+
+	
+			<form action="" id="showForm">
+                        First name:<br>
+                        <input type="text" name="firstname" value="John">
+						<br>
+						Last name:<br>
+						<input type="text" name="lastname">
+			</form>
+
+
+			<script>
+
+			var booValue = true;
+
+			function displayForm() {
+
+    		//var image = document.getElementById('myImage');
+
+    		if (booValue == true) {
+        			document.getElementById("showForm").style.display = "none";
+        			booValue = false;
+    		} else {
+        			document.getElementById("showForm").style.display = "block";
+        			booValue = true;
+    		  }
+			}
+</script>
+
+
+
+     </body>
+</html>

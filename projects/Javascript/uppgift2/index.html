@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<title>Min första sida</title>
+
+    	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+	</head>
+	<!--    <body>
+
+	       <button id="myButton">Ändra text</button>
+
+ 			<p id="text">Hello World</p> 
+
+ 			<script> //This is Javascript, Javascript börjar här
+
+     		document.getElementById("myButton").onclick = function() { //Fetch element with id=myButton (the button above), hämta element med id mybutton (kmappen ovan)
+           		document.getElementById("text").innerHTML = "Hello everybody";//Fetch element with id=text (the paragraph above), hämta element med id=text (stycketaggen ovan)
+     		} 
+
+
+     		</script> -->
+
+     		
+
+
+
+
+    <!--  		  	<p id="noShow"></p> 
+
+
+
+     		<button id="showElement">Visa element</button>
+
+     		<script>
+
+     			document.getElementById("showElement").onclick = function() {
+           		   document.getElementById("noShow").innerHTML = "<h1>Hej</h1>"; //You can have HTML-tags in the text like this to change the HTML. Du kan ha HTML-taggar så här för att ändra HTML.
+
+           		   /*The difference here is that we doesn´t show any text from the beginning. Otherwise same as example above. You can try with or without HTML-tags. Skillnaden här är att vi visar ingen text i stycketaggen från början. Annars samma som föregående exempel. Du kan prova med eller utan HTML-taggar. */
+           	}
+
+     		</script> -->
+
+     	
+
+
+
+
+
+
+
+     	<!-- 	<p id="noShow"></p>
+
+     		<button id="showElement">Visa element</button>
+
+     		<script>
+
+     		//Here I show that you can have more complex HTML-elements. If you have quotes in the HTML-tag use single-quotes (''). Här visar jag att du kan ha mer komplicerade HTML-element. Om du har citat-tecken i HTML-taggen så använd enkla ('')
+
+     			document.getElementById("showElement").onclick = function() {
+           		   document.getElementById("noShow").innerHTML = "<form action='demo_form.asp'>  Username: <input type='text name='usrname'><br><input type='submit' value='Submit'></form>";	
+           	}
+
+     		</script>  -->
+
+
+
+
+
+
+     <!-- 		<button id="styleText">Style text</button>
+
+ 			<p id="moreText">Hello World</p>
+
+ 			<script> 
+
+ 			//You can also change CSS by the keyword style. You can use many styles on one element. 
+
+ 			//Man kan också ändra CSS genom nyckelordet style. Du kan använda mer än en style.
+
+     		document.getElementById("styleText").onclick = function() {
+           		document.getElementById("moreText").style.fontSize = "50px";
+           		document.getElementById("moreText").style.color = "red";
+     		} 
+
+     		</script> -->
+
+
+
+
+
+
+
+
+    <!--  		<button id="styleText">Style text</button>
+
+ 			<p id="moreText">Hello World</p>
+
+ 			<script>
+
+ 			//Here I show that you can hide an element by using the display-keyword set to "none". 
+
+ 			//Här visar jag att du kan dölja ett element genom att använda nyckelordet display satt till "none"
+
+
+     		document.getElementById("styleText").onclick = function() {
+           		document.getElementById("moreText").style.display = "none";
+     		} 
+
+     		</script> -->
+
+     	
+
+     	
+
+     		<!-- Exemple to show or hide form like Bootstrap. Exempel för att visa eller dölja form som i Bootstrap-->
+
+           <img id="myImage" onclick="displayForm()" src="img/menu.png" width="50" height="50"> 
+           <!-- A picture you can click on. En bild som man kan klicka på-->
+             
+	
+			<form action="" id="showForm"> <!-- A form that is shown or hidden. Ett formulär som visas eller döljs.-->
+                        First name:<br>
+                        <input type="text" name="firstname" value="John">
+						<br>
+						Last name:<br>
+						<input type="text" name="lastname">
+			</form>
+
+
+			<script>
+
+			var booValue = true; //Boolean value that is true or false. Boolskt värde som är sant eller falskt
+
+			function displayForm() { //Function that is called when image is clicked. Funktion som anropas när man klickar på bilden.
+
+    	    //How this works: If value is true the form is hidden. If value is false it is shown. We always change the value of the bool so that we can show or hide the form by every click.
+
+    	    //Hur detta fungerar. Om värdet är sant döljs formen. Om värdet är sant visas den. Vi ändrar alltid värdet på vår boolska variabel så att vi kan visa eller dölja formen för varje klick.
+
+    		if (booValue == true) { 
+        			document.getElementById("showForm").style.display = "none"; värdet är sant. 
+        			booValue = false; 
+    		} else {
+        			document.getElementById("showForm").style.display = "block";
+        			booValue = true;
+    		  }
+			}
+
+			</script>
+
+     </body>
+</html>

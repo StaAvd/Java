@@ -1,0 +1,39 @@
+/* {margin:0;padding:0;}*/
+body {background-color:#7dd6be;
+    font-family:'Arial';
+    background: rgba(244,206,93,1);
+    background: -moz-linear-gradient(-45deg, rgba(244,206,93,1) 10%, rgba(244,206,93,1) 28%, rgba(136,189,87,1) 54%, rgba(136,189,87,1) 57%);
+    background: -webkit-gradient(left top, right bottom, color-stop(10%, rgba(244,206,93,1)), color-stop(28%, rgba(244,206,93,1)), color-stop(54%, rgba(136,189,87,1)), color-stop(57%, rgba(136,189,87,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(244,206,93,1) 10%, rgba(244,206,93,1) 28%, rgba(136,189,87,1) 54%, rgba(136,189,87,1) 57%);
+    background: -o-linear-gradient(-45deg, rgba(244,206,93,1) 10%, rgba(244,206,93,1) 28%, rgba(136,189,87,1) 54%, rgba(136,189,87,1) 57%);
+    background: -ms-linear-gradient(-45deg, rgba(244,206,93,1) 10%, rgba(244,206,93,1) 28%, rgba(136,189,87,1) 54%, rgba(136,189,87,1) 57%);
+    background: linear-gradient(135deg, rgba(244,206,93,1) 10%, rgba(244,206,93,1) 28%, rgba(136,189,87,1) 54%, rgba(136,189,87,1) 57%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4ce5d', endColorstr='#88bd57', GradientType=1 );
+    }
+
+#page {width:940px;margin:0 auto;}
+
+header {height:700px;}
+header img {margin:1px 0px 10px 0px;}
+header .phone {float:right;margin-top:30px;font-size:30px;font-family:'Arial';color:#525252;}
+
+nav {clear:both;height:60px;background-color:#759fff;border-radius:8px 8px 0px 0px;}
+nav ul {list-style:none;}
+nav ul li {float:left;margin:17px 20px;font-size:20px;font-family:'Georgia';font-style:italic;}
+nav ul li a {color:#f7f6c5;text-decoration:none;}
+
+
+.header_img {height:410px;background: url("img/header_img.jpg");border-radius:0px 0px 8px 8px;margin-bottom:15px;}
+
+#content {clear:both;}
+#content h1 {font-size:28px;font-family:'Georgia';font-style:italic;font-weight:normal;margin-bottom:20px;}
+#content img.float-right {float:right;margin:0px 0px 15px 15px;height: 250px;}
+#content p {margin-bottom:15px;}
+#country_selection_div img
+
+footer {clear:both;border-top:4px #027fd5 solid;margin-top:30px;padding:15px 0px;font-size:12px;}
+footer a {color:#000;text-decoration:underline;}
+footer a:hover {text-decoration:none;}
+#homebutton {color:#FFFFFF;text-decoration:none;font-size:20px;font-family:'Georgia';font-style:italic;margin-left: 48%}
+header p {text-align: center;line-height: 1.8;font-weight: 900}
+#contactsimg img {width:100%}
