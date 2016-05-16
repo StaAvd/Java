@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<title>JQuery</title>
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+      <link href=" jquery-ui/jquery-ui.css" rel="stylesheet">
+      <script src="jquery-ui/jquery-ui.js"></script>
+
+      <style type="text/css">
+
+              #circle {
+                 width: 150px;
+                 height: 150px;
+                 border-radius: 50%; /* To create circle */
+                 background-color: green;
+                 margin: 10px,
+              }
+
+              .square {
+                 width: 150px;
+                 height: 150px;
+                 background-color: red;
+                 margin: 10px;
+              }
+
+              .square2 {
+                width: 150px;
+                height: 150px;
+                background-color: blue;
+                margin: 10px;
+              }
+
+
+
+      </style>
+
+	</head>
+	     <body>
+
+            <div id="circle"></div>
+
+            <div class="square"></div>
+
+            <div class="square"></div><br><br>
+
+            <p><div>Hello World!</div></p>
+
+            <div class="square2" id="draggable"></div>
+
+
+
+            <script type="text/javascript">
+
+                //Välj cirkeln att klicka på
+
+             /*   $("#circle").click(function() {
+                      alert("cirkeln är klickad");
+                });
+
+                //Välj kvadraterna att klicka på.
+
+                $(".square").click(function() {
+                      alert("kvadraterna är klickade");
+                });*/
+
+                
+                $("div").click(function() {
+                      alert("Dív:en är klickad");
+                });
+
+                $("#draggable").draggable();
+
+
+
+
+            </script>
+
+	       
+
+     </body>
+</html>
