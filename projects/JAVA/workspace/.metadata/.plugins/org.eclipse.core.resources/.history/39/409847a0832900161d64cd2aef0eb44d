@@ -1,0 +1,107 @@
+import java.util.Calendar;
+import java.net.NetworkInterface;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+ 
+public class Fordon {
+	private String color;
+	private String mark;
+	private Float price;
+	private Date year; 
+	
+	public Fordon() {
+		super();
+		color = "";
+		mark = "";
+		price = 0.001f;
+	}
+	
+	public Fordon(String mark, String color, Float price, String year) {
+		super();
+		this.color = color;
+		this.mark = mark;
+		this.price = price;
+		this.year = this.setYear(year);
+	}
+	public Date getYear() {
+		return year;
+	}
+
+	public Date setYear(String year) {
+		Date d;
+		Calendar cal = Calendar.getInstance();
+		cal.set(2000, 05, 31);
+				
+		SimpleDateFormat shablon = new SimpleDateFormat("dd.mm.yyyy");
+		try	{
+			d = shablon.parse(year);
+			this.year = d;
+			return d;
+			//shablon.applyPattern("yyyy-mm-dd");
+		}
+		catch (Exception e) {
+			d = new Date();//shablon.parse(defdate);
+			this.year=cal.getTime();
+			return d;
+			
+		}
+
+	}
+
+	public String getColor() {
+		return this.color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getMark() {
+		return mark;
+	}
+
+	public void setMark(String mark) {
+		this.mark = mark;
+	}
+	public void setPrice(Float price) {
+		this.price = price;
+	}
+	
+	public Float getPrice() {
+		return this.price;
+	}
+	
+	public void info() {
+		System.out.printf ("Mark:    %s |   Color:   %s |    %f |    %s \n",
+				this.mark,
+				this.color,
+				this.price,
+				this.year.toString());
+	}
+	
+
+	public static void main(String[] args) {
+
+		Fordon[] Cars = new Fordon[11];
+		
+		for (int i=0; i < Cars.length; i++){
+			
+			if (i<10){ 
+				Fordon f = new Fordon("Volvo 740","Green",(float)(i+1)*200, "01.02.2005");
+			}
+			else {
+				Fordon f = new Fordon("Volvo 740","Green",(float)(i+1)*200, "ffff");
+				}
+
+			f.setColor("Color "+i);
+			f.setMark("Mark " + i);
+			f.setPrice((float)((i+1)*100));
+			Cars[i]=f;
+		};		
+
+		for (int i=0;i<10;i++){
+			Cars[i].info();
+		};		
+	}
+}
